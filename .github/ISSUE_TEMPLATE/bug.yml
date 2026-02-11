@@ -1,0 +1,69 @@
+name: Bug
+description: A defect causing incorrect or unintended behavior
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Summary
+        Provide a clear and concise description of the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is happening?
+      placeholder: Describe the incorrect or unexpected behavior.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Steps to Reproduce
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction Steps
+      description: List the steps required to reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Expected Behavior
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      description: What should happen instead?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Additional Context
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, version, branch, etc.
+      placeholder: |
+        - Environment:
+        - Branch:
+        - OS:
+    validations:
+      required: true
