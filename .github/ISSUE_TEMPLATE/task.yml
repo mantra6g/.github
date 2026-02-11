@@ -1,0 +1,56 @@
+name: Task
+description: A concrete unit of engineering work required for completing a Story or resolving a Bug
+
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task Overview
+        Describe the concrete work that needs to be completed.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Work to be Done
+      description: Clearly describe the implementation activity.
+      placeholder: |
+        Implement...
+        Update...
+        Configure...
+        Refactor...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Objective
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Purpose
+      description: What outcome should this task achieve?
+      placeholder: Describe the intended result or improvement.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Definition of Done
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Completion Criteria
+      description: Internal checks required before marking this task complete.
+      placeholder: |
+        - [ ] Code implemented
+        - [ ] Tests added/updated
+        - [ ] Reviewed and merged
+    validations:
+      required: true
