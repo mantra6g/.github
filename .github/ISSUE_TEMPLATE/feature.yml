@@ -1,11 +1,11 @@
-name: Story
-description: A user requirement describing valuable functionality
+name: Feature
+description: A request, idea, or new functionality
 
 body:
   - type: textarea
-    id: user_story
+    id: feat_desc
     attributes:
-      label: Story description
+      label: Feature description
       description: Describe the desired functionality using As a / I want / So that
       placeholder: |
         As a...
