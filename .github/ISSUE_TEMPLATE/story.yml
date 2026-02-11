@@ -2,13 +2,10 @@ name: Story
 description: A user requirement describing valuable functionality
 
 body:
-  - type: markdown
-    attributes:
-      value: "## Story description"
-
   - type: textarea
     id: user_story
     attributes:
+      label: Story description
       description: Describe the desired functionality using As a / I want / So that
       placeholder: |
         As a...
@@ -17,16 +14,10 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        
-        ---
-        ## Acceptance criteria
-
   - type: textarea
     id: acceptance_criteria
     attributes:
+      label: Acceptance Criteria
       description: List specific conditions that must be met for completion.
       placeholder: |
         - [ ] Criterion 1
