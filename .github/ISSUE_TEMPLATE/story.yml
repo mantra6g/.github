@@ -9,8 +9,7 @@ body:
   - type: textarea
     id: user_story
     attributes:
-      label: User Story
-      description: Use the format As a / I want / So that
+      description: Describe the desired functionality using As a / I want / So that
       placeholder: |
         As a...
         I want...
@@ -28,7 +27,7 @@ body:
   - type: textarea
     id: acceptance_criteria
     attributes:
-      label: Acceptance Criteria
+      description: List specific conditions that must be met for completion.
       placeholder: |
         - [ ] Criterion 1
         - [ ] Criterion 2
